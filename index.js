@@ -1,3 +1,8 @@
 import { franc } from 'franc';
+const langs = import('langs');
 
-console.log(franc('Alle menslike wesens word vry'));
+const input = process.argv[2];
+const code = franc(input);
+const language = langs.where("3", code);
+
+console.log(language.name);
