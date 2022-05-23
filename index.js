@@ -7,5 +7,5 @@ if (langCode == 'und') {
     console.log("Input not recognized, please try again");
 } else {
     const language = langs.where("3", langCode);
-    console.log(language.name);
+    console.log(`This language is most likely: ${language.name}`);
 }
